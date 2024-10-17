@@ -57,13 +57,12 @@
             append-icon="mdi-open-in-new"
             class="py-4"
             color="surface-variant"
-            href="https://vuetifyjs.com/"
+            :to="'/listarcomponentes'"
             prepend-icon="mdi-text-box-outline"
             rel="noopener noreferrer"
             rounded="lg"
             subtitle="Learn about all things Vuetify in our documentation."
-            target="_blank"
-            title="Documentation"
+            title="Componentes"
             variant="text"
           >
             <v-overlay
