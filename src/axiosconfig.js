@@ -3,7 +3,8 @@ import axios from 'axios';
 
 // Crea una nueva instancia de Axios con una configuración predeterminada específica para tu aplicación
 const instance = axios.create ({
-  baseURL: 'https://laravel-railway-production-20f4.up.railway.app/api', // Define la URL base para todas las solicitudes HTTP que uses con esta instancia
+  // baseURL: 'https://laravel-railway-production-20f4.up.railway.app/api', // Define la URL base para todas las solicitudes HTTP que uses con esta instancia
+  baseURL: 'http://127.0.0.1:8000/api',
 });
 
 // Agrega un interceptor de solicitud a la instancia de Axios

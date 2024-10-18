@@ -112,7 +112,7 @@
         </v-menu>
       </div>
 
-      <LoginButton />
+      <LoginButton/>
 
     </template>
   </v-app-bar>
@@ -174,7 +174,7 @@
 
   <v-sheet>
     <v-app-bar class="elevation-0">
-      <v-tabs v-model="tab" bg-color="green-lighten-5">
+      <v-tabs v-model="tab">
         <v-tab value="componentes">Componentes</v-tab>
         <v-tab value="two">Item Two</v-tab>
         <v-tab value="three">Item Three</v-tab>
@@ -182,7 +182,7 @@
     </v-app-bar>
 
     <div>
-      <v-tabs-window v-model="tab">
+      <v-tabs-window class="mt-5" v-model="tab">
         <v-tabs-window-item value="componentes">
           <!-- Data table card -->
           <v-card variant="text">
@@ -325,6 +325,7 @@
 
 <script>
 import api from '@/axiosconfig'
+import LoginButton from './LoginButton.vue';
 
 export default {
   name: 'ListarArticulosPage',
